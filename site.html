@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center -200px;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .back {
+
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+
+    .back img {
+
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    h1 {
+
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%);
+        display: block;
+        
+    }
+</style>
+<body>      
+
+    <span>
+        <div class="back"><img id="imgx" src="" alt=""></div>
+        <H1 style="cursor: pointer;" id="otario">CLIQUE AQUI</H1>
+    </span>
+
+
+    <script>
+        
+
+        let otario = document.getElementById('otario')
+        let imageS = document.getElementById('imgx')
+        otario.addEventListener('click', function(){
+
+
+            imageS.src = "poze.jpg"
+            otario.style.background = "#000"
+            otario.style.fontSize = "140px"
+            otario.style.color = "#FFF"
+            otario.innerHTML = "OTÁRIO!"
+        })
+
+
+    </script>
+</body>
+</html>
